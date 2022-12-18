@@ -2,9 +2,10 @@
 #include <pthread.h>
 #include <sys/resource.h>
 #include <sys/wait.h>
-#define _GNU_SOURCE       
+       
 #include <sys/syscall.h>
 #include <unistd.h>
+#define _GNU_SOURCE
           
 void *thread_fn(void* arg){
     // get tid
